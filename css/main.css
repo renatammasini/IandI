@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --content-wrapper-width: 60%;
+  --base-space: 1.25rem;
+  /* colours */
+  --darkgray: #414141;
+  --lightgray: #d9d9d9;
+  --teal: #53ccb6;
+  --white: #fff;
+  --violet1: #7084de;
+  --violet2: #d2d4f5;
+  --violet3: #f0f1fc;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 100%;
+  color: var(--darkgray);
+  background-color: var(--white);
+}
+
+.content-wrapper {
+  max-width: var(--content-wrapper-width);
+  margin: 0 auto;
+  padding: 9rem 0rem 9rem 0rem;
+}
+
+.header {
+  background-image: url("../images/header-bg.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.logo {
+  max-width: 50%;
+  /* margin-top: 1rem; */
+}
+
+.box1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  width: fit-content;
+  margin-top: 3rem;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  color: var(--white);
+  background-color: var(--teal);
+}
+
+.box1 :hover {
+  color: var(--lightgray);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.slogan {
+  font-size: 2rem;
+  margin-top: 1em;
+  line-height: 1.3em;
+  font-weight: 200;
+  width: 50%;
+}
+
+/* LUIZ VAI AJUDAR */
+/* .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards img {
+  width: 100%;
+} */
+
+.services {
+  background-color: var(--violet3);
+  font-size: 1rem;
+  font-weight: 300;
+
+  .columns {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+
+    /* align-items: center; */
+    /* & > * {
+      flex-basis: calc(25% - var(--base-space));
+    } */
+  }
+}
+
+article {
+  /* border: 1px solid green; */
+  flex: 0 1 25%;
+}
+
+.icons {
+  /* border: 1px solid blue; */
+  width: 100%;
+  max-height: 9rem;
+  padding: 1rem;
+}
+article p {
+  /* border: 1px solid cyan; */
+}
+
+/* ====== CASE STUDIES ===== */
+.cases {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2em;
+  padding: 3em 0 3em 0;
+  display: flex;
+  gap: 1.5rem;
+  /* & > * {
+    flex-basis: calc(50% - var(--base-space));
+  } */
+}
+
+.cases-img {
+  object-fit: cover;
+}
+
+.clients {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  & > * {
+    flex-basis: calc(20% - var(--base-space));
+  }
+}
+
+.quote {
+  background-color: var(--violet2);
+}
+
+blockquote {
+  font-weight: 200;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3em;
+  padding-bottom: 1em;
+}
+
+cite {
+  color: var(--violet1);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Space grotesk;
+}
+
+h2 {
+  color: var(--teal);
+  font-size: 2rem;
+  padding: 0rem 0rem 3rem 0rem;
+  font-family: Space grotesk;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.break {
+  background-color: var(--teal);
+  color: var(--white);
+  padding: 50px;
+  text-align: center;
+}
+
+.callout {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0px 0px 20px 0px;
+  font-family: Space grotesk;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0em 2em 0em;
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  img {
+    padding: 1em;
+    display: inline-block;
+    max-height: 70px;
+    fill: var(--darkgray);
+
+    hover {
+      fill: var(--lightgray);
+    }
+
+    /* svg {
+      fill: aqua;
+    } */
+  }
+}
