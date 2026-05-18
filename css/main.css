@@ -119,14 +119,24 @@ article {
 
 /* ====== CLIENTS ===== */
 .clients {
+  /* border: 1px solid red; */
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   margin-bottom: 1.5rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
   align-items: center;
-  & > * {
+  /* flex: 0 5 1; */
+  /* & > * {
     flex-basis: calc(20% - var(--base-space));
-  }
+  } */
+}
+
+.third-party {
+  /* border: 1px solid rgb(10, 34, 129); */
+  /* flex: 1 0 15px; */
+  /* width: 80%; */
+  max-width: 100%;
 }
 
 /* ====== CASE STUDIES ===== */
@@ -144,6 +154,7 @@ article {
 
 .cases-img {
   object-fit: cover;
+  width: 30%;
 }
 
 .stats_container {
