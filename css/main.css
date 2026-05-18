@@ -30,6 +30,7 @@ body {
   padding: 9rem 0rem 9rem 0rem;
 }
 
+/* ====== HEADER ===== */
 .header {
   background-image: url("../images/header-bg.png");
   background-attachment: scroll;
@@ -83,6 +84,7 @@ a {
   width: 100%;
 } */
 
+/* ====== SERVICES ===== */
 .services {
   background-color: var(--violet3);
   font-size: 1rem;
@@ -114,8 +116,17 @@ article {
   max-height: 9rem;
   padding: 1rem;
 }
-article p {
-  /* border: 1px solid cyan; */
+
+/* ====== CLIENTS ===== */
+.clients {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  & > * {
+    flex-basis: calc(20% - var(--base-space));
+  }
 }
 
 /* ====== CASE STUDIES ===== */
@@ -135,17 +146,39 @@ article p {
   object-fit: cover;
 }
 
-.clients {
+.stats_container {
   display: flex;
+  align-items: flex-start;
   gap: 3rem;
-  margin-bottom: 1.5rem;
-  justify-content: space-around;
-  align-items: center;
-  & > * {
-    flex-basis: calc(20% - var(--base-space));
+}
+
+.stats {
+  display: flex;
+  align-items: baseline;
+  padding: 2rem 0rem 0rem 0rem;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.75rem 0rem 0rem 0rem;
+    font-family: Space grotesk;
   }
 }
 
+.icon_stat {
+  padding: 0rem 1rem 0rem 0rem;
+  max-height: 3rem;
+}
+
+.figure {
+  color: var(--violet1);
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 0rem 0rem 0rem 0rem;
+  font-family: Space grotesk;
+}
+
+/* ====== QUOTES ===== */
 .quote {
   background-color: var(--violet2);
 }
@@ -166,6 +199,7 @@ cite {
   font-style: normal;
 }
 
+/* ====== FONTS ===== */
 h1 {
   font-size: 2rem;
   font-family: Space grotesk;
@@ -182,6 +216,7 @@ p {
   font-size: 1.5rem;
 }
 
+/* ====== BREAK ===== */
 .break {
   background-color: var(--teal);
   color: var(--white);
@@ -195,7 +230,7 @@ p {
   padding: 0px 0px 20px 0px;
   font-family: Space grotesk;
 }
-
+/* ====== FOOTER ===== */
 footer {
   text-align: center;
   padding: 2em 0em 2em 0em;
