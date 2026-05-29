@@ -17,9 +17,43 @@
     <script src="https://unpkg.com/@glidejs/glide"></script>
 
     <title>I&I Innovation Consultancy LTD</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   </head>
   <body>
-    <section class="header">
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <a href="#header"
+          ><img
+            src="images/IandI_small.svg"
+            alt="I and I consultancy logo"
+            class="header-logo"
+        /></a>
+
+        <button class="button" id="menu-btn">
+          <img src="images/menu.svg" alt="menu" />
+        </button>
+
+        <ul class="menu">
+          <li>
+            <a href="#services" class="header-link">Services</a>
+          </li>
+          <li>
+            <a href="#clients" class="header-link">Clients</a>
+          </li>
+          <li>
+            <a href="#casestudies" class="header-link">Case studies</a>
+          </li>
+          <li>
+            <a href="#certifications" class="header-link">Certifications</a>
+          </li>
+          <li>
+            <a href="#contact" class="header-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="open" id="header">
       <div class="content-wrapper">
         <img
           src="images/IandI.svg"
@@ -38,7 +72,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="content-wrapper">
         <div>
           <h2>Consultancy and interim services</h2>
@@ -118,7 +152,7 @@
     <section>
       <div class="content-wrapper">
         <h2>Previous clients</h2>
-        <div class="clients">
+        <div class="clients" id="clients">
           <a href="https://reframebrands.com" target="_blank"
             ><img src="images/reframe 1.png" alt="Reframe" class="third-party"
           /></a>
@@ -305,11 +339,11 @@
 
     <!-- CASE STUDIES -->
     <section>
-      <div class="content-wrapper">
+      <div class="content-wrapper" id="casestudies">
         <h2>Case studies</h2>
 
         <!-- CS1 -->
-        <article class="cases">
+        <article class="cases1st">
           <div>
             <p>
               Took on interim team leader role in a large global company after a
@@ -529,7 +563,7 @@
     </section>
 
     <!-- CERTIFICATIONS -->
-    <section class="services">
+    <section class="services" id="certifications">
       <div class="content-wrapper">
         <h2>Certifications</h2>
         <div class="clients">
@@ -543,7 +577,7 @@
             ><img
               src="images/PMI.png"
               alt="Project Management Institute"
-              class="third-party"
+              class="third-party-tall"
           /></a>
           <a href="https://sciencecouncil.org/" target="_blank"
             ><img
@@ -557,12 +591,18 @@
             ><img
               src="images/Yellow-belt.png"
               alt="Lean Six Sigma International Yellow Belt"
+              class="third-party-tall"
+          /></a>
+          <a href="https://scs.org.uk/" target="_blank"
+            ><img
+              src="images/SCS-Logo-2014-blue-reg-mark.png"
+              alt="Society of Cosmetic Scientists"
               class="third-party"
           /></a>
         </div>
       </div>
     </section>
-    <section class="break">
+    <section class="break" id="contact">
       <p class="callout">Reach out today!</p>
       <p>
         Let’s start a conversation about how we can support your goals and bring
@@ -583,5 +623,6 @@
       <p>© 2026. I&I Innovation Consultancy LTD</p>
     </footer>
   </body>
+  <script src="js/menu.js"></script>
   <script src="js/quotes.js"></script>
 </html>

@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -27,16 +28,16 @@ body {
 .content-wrapper {
   max-width: var(--content-wrapper-width);
   margin: 0 auto;
-  padding: 9rem 0rem 9rem 0rem;
+  padding: 8rem 0rem 8rem 0rem;
 }
 
 /* ====== HEADER ===== */
-.header {
+.open {
   background-image: url("../images/header-bg.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 1hr;
 }
 
 .logo {
@@ -73,16 +74,6 @@ a {
   font-weight: 200;
   width: 50%;
 }
-
-/* LUIZ VAI AJUDAR */
-/* .cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cards img {
-  width: 100%;
-} */
 
 /* ====== SERVICES ===== */
 .services {
@@ -139,17 +130,34 @@ article {
   max-width: 100%;
 }
 
+.third-party-tall {
+  /* border: 1px solid rgb(10, 34, 129); */
+  /* flex: 1 0 15px; */
+  /* width: 80%; */
+  max-width: 100%;
+  max-height: 80%;
+}
+
 /* ====== CASE STUDIES ===== */
 .cases {
   font-size: 1rem;
   font-weight: 300;
   line-height: 2em;
-  padding: 3em 0 3em 0;
+  padding: 4em 0 4em 0;
   display: flex;
   gap: 1.5rem;
   /* & > * {
     flex-basis: calc(50% - var(--base-space));
   } */
+}
+
+.cases1st {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2em;
+  padding: 0em 0 4em 0;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .cases-img {
@@ -220,7 +228,7 @@ h2 {
   color: var(--teal);
   font-size: 2rem;
   padding: 0rem 0rem 3rem 0rem;
-  font-family: Space grotesk;
+  font-family: "Space grotesk", sans-serif;
 }
 
 p {
@@ -244,7 +252,7 @@ p {
 /* ====== FOOTER ===== */
 footer {
   text-align: center;
-  padding: 2em 0em 2em 0em;
+  padding: 2em 0em 4em 0em;
 
   p {
     font-size: 0.7rem;
