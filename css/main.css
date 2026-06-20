@@ -29,6 +29,7 @@ body {
   max-width: var(--content-wrapper-width);
   margin: 0 auto;
   padding: 8rem 0rem 8rem 0rem;
+  overflow-x: hidden;
 }
 
 /* ====== HEADER ===== */
@@ -204,7 +205,7 @@ article {
 
 blockquote {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.3em;
@@ -213,7 +214,7 @@ blockquote {
 
 cite {
   color: var(--violet1);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   font-style: normal;
 }
@@ -274,8 +275,8 @@ footer {
   }
 }
 
-/* ====== responsive ===== */
-@media screen and (max-width: 768px) {
+/* ====== MOBILE ===== */
+@media screen and (max-width: 576px) {
   /* .row {
     flex-direction: column;
   }
@@ -302,46 +303,48 @@ footer {
     /* padding: 0rem 0rem 1rem 0rem; */
   }
 
-   p {
+  p {
     font-size: 1rem;
+    line-height: normal;
   }
   .services {
-  p {
-    text-align: center;
-  }
+    p {
+      text-align: center;
+    }
 
-  .columns {
+    .columns {
+      flex-direction: column;
+    }
+
+    .icons {
+      max-height: 7rem;
+    }
+  }
+  .clients {
     flex-direction: column;
+    padding: 0rem 0rem 3rem 0rem;
   }
 
-  .icons {
-  max-height: 7rem;
-}
+  .third-party {
+    max-height: 7rem;
+  }
 
-.clients {
-  flex-direction: column;
-  /* margin-bottom: 1.5rem; */
-  /* justify-content: space-between; */
-  /* flex-wrap: nowrap;
-  align-items: center; */
-}
+  .third-party-tall {
+    max-height: 6rem;
+  }
 
-.third-party {
-  max-height: 7rem;
-}
+  blockquote {
+    font-size: 1rem;
+  }
 
-.third-party-tall {
-  max-height: 6rem;
-}
+  cite {
+    font-size: 0.75rem;
+  }
 
-blockquote {
-  font-size: 1rem;
-}
-
-cite {
-  font-size: 0.75rem;
-}
-}
+  .cases1st {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* @media screen and (max-width: 545px) {
@@ -349,4 +352,3 @@ cite {
     flex-direction: column;
     align-items: flex-start;
   } */
-}
