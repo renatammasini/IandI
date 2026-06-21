@@ -252,10 +252,11 @@ p {
 /* ====== FOOTER ===== */
 footer {
   text-align: center;
-  padding: 2em 0em 4em 0em;
+  padding: 5rem;
 
   p {
     font-size: 0.7rem;
+    padding: 2rem 0rem 5rem 0rem;
   }
 
   img {
@@ -267,10 +268,6 @@ footer {
     hover {
       fill: var(--lightgray);
     }
-
-    /* svg {
-      fill: aqua;
-    } */
   }
 }
 
@@ -312,12 +309,24 @@ footer {
     line-height: normal;
   }
   .services {
-    p {
+    /* p {
       text-align: center;
-    }
+    } */
 
     .columns {
       flex-direction: column;
+    }
+
+    .servico-item {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      /* justify-content: left; */
+      text-align: left;
+    }
+
+    .servico-item img {
+      max-width: 25%;
     }
 
     .icons {
@@ -325,31 +334,30 @@ footer {
     }
   }
   .clients {
-    /* flex-direction: column; */
-    border: #7084de solid 1px;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    /* padding: 0rem 0rem 3rem 0rem; */
+    gap: 1rem;
+    justify-content: center;
   }
 
-  .third-party {
-    /* flex-wrap: wrap; */
-    border: #ee1384 solid 1px;
-    /* flex: 0 0 1;
-    width: 100%;
-    height: 100%; */
-    /* max-width: 60%; */
+  .third-party,
+  .third-party-tall {
+    flex: 0 0 calc(50% - 0.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .third-party img,
   .third-party-tall img {
-    display: flex;
+    max-width: 70%;
+    height: auto;
+    display: block;
   }
 
-  /* .third-party-tall {
+  .third-party-tall {
     max-height: 6rem;
-  } */
+  }
 
   blockquote {
     font-size: 1.25rem;
@@ -371,6 +379,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     /* border: #ee1384 solid 1px; */
+    gap: 0rem;
   }
 
   .stats {
@@ -378,14 +387,12 @@ footer {
     width: 100%;
   }
 
-  .stats img {
+  .icon_stat {
+    padding: 0rem 1rem 0rem 0rem;
+    max-height: 3rem;
+    width: 4rem;
     /* border: royalblue solid 1px; */
-    max-width: 15%;
   }
-
-  /* .figure {
-    border: greenyellow solid 1px;
-  } */
 
   .cases-img {
     width: 100%;
