@@ -325,12 +325,14 @@ footer {
       text-align: left;
     }
 
-    .servico-item img {
+    /* .servico-item img {
       max-width: 25%;
-    }
+      max-height: 7rem;
+    } */
 
     .icons {
-      max-height: 7rem;
+      max-width: 25%;
+      max-height: 25%;
     }
   }
   .clients {
