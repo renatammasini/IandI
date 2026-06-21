@@ -32,13 +32,13 @@ body {
   overflow-x: hidden;
 }
 
-/* ====== HEADER ===== */
+/* ====== OPEN ===== */
 .open {
   background-image: url("../images/header-bg.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1hr;
+  background-position: right center;
 }
 
 .logo {
@@ -60,7 +60,8 @@ body {
 }
 
 .box1 :hover {
-  color: var(--lightgray);
+  color: var(--darkgray);
+  transition: color 0.5s ease;
 }
 
 a {
@@ -276,7 +277,7 @@ footer {
 }
 
 /* ====== MOBILE ===== */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   /* .row {
     flex-direction: column;
   }
@@ -298,6 +299,9 @@ footer {
     font-weight: 200;
     width: 100%;
   }
+  /* .open {
+    filter: opacity(0.5);
+  } */
   h2 {
     font-size: 1.5rem;
     /* padding: 0rem 0rem 1rem 0rem; */
