@@ -39,6 +39,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
+  position: relative;
+  overflow: hidden;
 }
 
 .logo {
@@ -53,8 +55,6 @@ body {
   padding: 0.5em 1em;
   width: fit-content;
   margin-top: 3rem;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   color: var(--white);
   background-color: var(--teal);
 }
@@ -87,24 +87,15 @@ a {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
-    /* justify-content: space-around; */
     justify-content: space-between;
-    /* border: 1px solid red; */
-
-    /* align-items: center; */
-    /* & > * {
-      flex-basis: calc(25% - var(--base-space));
-    } */
   }
 }
 
 article {
-  /* border: 1px solid green; */
   flex: 0 1 25%;
 }
 
 .icons {
-  /* border: 1px solid blue; */
   width: 100%;
   max-height: 9rem;
   padding: 1rem;
@@ -112,23 +103,15 @@ article {
 
 /* ====== CLIENTS ===== */
 .clients {
-  /* border: 1px solid red; */
   display: flex;
   gap: 2rem;
   margin-bottom: 1.5rem;
   justify-content: space-between;
   /* flex-wrap: nowrap; */
   align-items: center;
-  /* flex: 0 5 1; */
-  /* & > * {
-    flex-basis: calc(20% - var(--base-space));
-  } */
 }
 
 .third-party {
-  /* border: 1px solid rgb(10, 34, 129); */
-  /* flex: 1 0 15px; */
-  /* width: 80%; */
   max-width: 100%;
 }
 
@@ -278,19 +261,6 @@ footer {
 
 /* ====== MOBILE ===== */
 @media screen and (max-width: 768px) {
-  /* .row {
-    flex-direction: column;
-  }
-
-  article {
-    display: flex;
-    column-gap: 2.5rem;
-    align-items: center;
-
-    & picture {
-      width: 100%;
-    }
-  } */
   .logo {
     max-width: 100%;
   }
@@ -299,11 +269,26 @@ footer {
     font-weight: 200;
     width: 100%;
   }
-  /* .open {
-    filter: opacity(0.5);
-  } */
+  .open::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba (100, 0, 0, 0.1),
+      rgba (100, 0, 0, 1)
+    );
+    pointer-events: none;
+    /* url("../images/header-bg.png"); */
+  }
+
+  .open > * {
+    position: relative;
+    z-index: 1;
+  }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     /* padding: 0rem 0rem 1rem 0rem; */
   }
 
