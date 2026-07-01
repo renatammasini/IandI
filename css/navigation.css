@@ -1,5 +1,5 @@
 nav {
-  background-color: rgba(83, 204, 182, 0.7);
+  background-color: rgba(83, 204, 182, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +11,7 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.3vw;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.75rem;
   padding: 0.5rem 2rem 0.5rem 2rem;
 }
